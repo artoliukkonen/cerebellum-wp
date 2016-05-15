@@ -1,0 +1,26 @@
+.Posts {
+  .Post {
+    height: 15rem;
+    margin: 1rem 0;
+    position: relative;
+    h3 {
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      padding: 0.5rem;
+      height: 6.5rem;
+      font-size: 1.25rem;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.Post {
+  img {
+    max-width: 100%;
+  }
+}
