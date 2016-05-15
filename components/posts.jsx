@@ -6,19 +6,17 @@ import Post from './post.jsx';
 class Posts extends PureComponent {
 
   render() {
-    const {store, selectLink} = this.props;
+    let {posts, selectLink} = this.props;
 
-    const posts = this.props.posts.toArray().map((post, i) => {
+    posts = posts.toArray().reverse().map((post, i) => {
       return <Post key={post.get("id")} post={post} excerpt="true" />
     });
 
     return (
       <div className="Posts">
-        <Panel>
-          <Row>
-            {posts}
-          </Row>
-        </Panel>
+        <Row>
+          {posts}
+        </Row>
       </div>
     );
   }

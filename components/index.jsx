@@ -33,10 +33,8 @@ class Index extends PureComponent {
 
     return (
       <div className="Index">
-        <Jumbotron>
-          <h1>cerebellum/WordPress demo app</h1>
-          <Posts posts={posts} selectLink={this.selectLink} />
-        </Jumbotron>
+        <h1>cerebellum/WordPress demo app</h1>
+        <Posts posts={posts} selectLink={this.selectLink} />
       </div>
     );
   }

@@ -8,7 +8,7 @@ var Post = Model.extend({
   },
 
   url() {
-    return `${apiConfig.url}/posts/${this.storeOptions.id}`;
+    return `${apiConfig.url}/wp-json/wp/v2/posts/${this.storeOptions.id}?_embed`;
   }
 });
 

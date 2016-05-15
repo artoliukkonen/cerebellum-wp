@@ -5,7 +5,7 @@ var Posts = Model.extend({
   cacheKey: "posts",
   idAttribute: "id",
   url: function() {
-    return apiConfig.url +"/posts";
+    return apiConfig.url +"/wp-json/wp/v2/posts?_embed&per_page=20";
   }
 });
 
