@@ -10,6 +10,7 @@ class Post extends PureComponent {
   static title(props) {
     return props.post.get('title').get('rendered');
   }
+
   static stores = (request) => {
     return {
       post: {id: request.params.id}

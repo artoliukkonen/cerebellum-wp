@@ -6,7 +6,7 @@ import Post from './post.jsx';
 class Posts extends PureComponent {
 
   render() {
-    let {posts, selectLink} = this.props;
+    let {posts} = this.props;
 
     posts = posts.toArray().reverse().map((post, i) => {
       return <Post key={post.get("id")} post={post} excerpt="true" />

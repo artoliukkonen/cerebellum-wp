@@ -14,27 +14,13 @@ class Index extends PureComponent {
     };
   }
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      selectedLink: null
-    };
-
-    this.selectLink = this.selectLink.bind(this);
-  }
-
-  selectLink(link) {
-    this.setState({selectedLink: link});
-  }
-
   render() {
     let {posts} = this.props;
 
     return (
       <div className="Index">
         <h1>cerebellum/WordPress demo app</h1>
-        <Posts posts={posts} selectLink={this.selectLink} />
+        <Posts posts={posts} />
       </div>
     );
   }
