@@ -2,7 +2,7 @@ import React from 'react';
 import PureComponent from 'react-pure-render/component';
 import {Jumbotron} from 'react-bootstrap';
 
-import Posts from './posts.jsx';
+import Posts from './Posts.jsx';
 
 class Index extends PureComponent {
 

@@ -30,7 +30,7 @@ options.middleware = [
 ];
 
 // cerebellum-react specific options
-const Layout = React.createFactory(require('./components/layout.jsx'));
+const Layout = React.createFactory(require('./components/Layout.jsx'));
 options.prependTitle = "cerebellum-wp - ";
 options.containerComponent = (store, children, props) => {
   return Layout({ store, children });

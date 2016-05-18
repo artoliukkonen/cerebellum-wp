@@ -1,7 +1,7 @@
 import React from 'react';
 import PureComponent from 'react-pure-render/component';
 import {Panel, Row} from 'react-bootstrap';
-import Post from './post.jsx';
+import Post from './Post.jsx';
 
 class Posts extends PureComponent {
 

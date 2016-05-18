@@ -30,7 +30,9 @@ class Post extends PureComponent {
     return (
       <Col className='Post' md={content ? 12 : 3}>
         <img src={apiConfig.url + featuredMedia} />
-        <h3><a href={`/post/${post.get("id")}`} dangerouslySetInnerHTML={({__html: post.get("title").get('rendered')})}></a></h3>
+        <h3>
+          <a href={`/post/${post.get("id")}`} dangerouslySetInnerHTML={({__html: post.get("title").get('rendered')})}></a>  
+        </h3>
         <div dangerouslySetInnerHTML={({__html: content})} />
       </Col>
     );
